@@ -17,32 +17,6 @@ function validateForm() {
 </head>
 <body>
 <H1>George the Elf's Security Page</h1>
-<form name="myForm" action="" onsubmit="return validateForm()" method="post">
-  Code: <input type="text" name="first"> - <input type="text" name="second"> - <input type="text" name="third">
-  <input type="submit" value="Submit">
-</form>
-<div id="riddle" style="font-weight:bold;color:red;font-size=1.2em;"></div>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<script>
-function validateForm() {
-  var first = document.forms["myForm"]["first"].value;
-  var second = document.forms["myForm"]["second"].value;
-  var third = document.forms["myForm"]["third"].value;
-  if (first == "65" && second == "09" && third == "87") {
-  	document.getElementById("riddle").innerHTML = "<br/>You found my riddle<br/><br/>When on, I’m hot like the core of the earth. I’m nothing like the pole in the north, but I’m close to where you started at first.  Your mom complains about me all the time.  What am I?";
-  } else {
-  	alert("Code Not Accepted!");
-  }
-  return false;
-}
-</script>
-</head>
-<body>
-<H1>George the Elf's Security Page</h1>
 <form name="myForm" action="" onsubmit="return validateForm()" method="post" style="font-size:1.5em;">
   Code: <input style="font-size:1.3em;" type="text" name="first" size="2"> - <input style="font-size:1.3em;" type="text" name="second" size="2"> - <input style="font-size:1.3em;" type="text" name="third" size="2">
   <input type="submit" value="Submit">
